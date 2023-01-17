@@ -25,6 +25,7 @@ watch(locale, async () => await navigateTo(localePath(route.meta.path)))
     </nav>
     
     <NuxtLink :to="localePath('/')">Home</NuxtLink>&ThinSpace;
+    <NuxtLink :to="localePath('/module')">Module</NuxtLink>&ThinSpace;
     <NuxtLink :to="localePath('/about-us')">About</NuxtLink>
     <div style="margin-top: 2em;">
       <NuxtPage />

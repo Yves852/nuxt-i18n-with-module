@@ -3,6 +3,7 @@ import i18n from './plugins/i18n'
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
+    './modules/test-nuxt-i18n-module'
   ],
   i18n: {
     types: 'composition',
