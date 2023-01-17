@@ -1,5 +1,8 @@
 {
   "hello": "Hallo",
   "about": "Over",
-  "about-us": "Over ons"
+  "about-us": "Over ons",
+  "my-module": {
+    "add": "Toevoegen"
+  }
 }

@@ -1,5 +1,8 @@
 {
   "hello": "Hello",
   "about": "About",
-  "about-us": "About us"
+  "about-us": "About us",
+  "my-module": {
+    "add": "Add"
+  }
 }
