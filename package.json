@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "packageManager": "pnpm@7.13.5",
+  "engines": {
+    "node": ">=18.12.1",
+    "pnpm": ">=7.13.5"
+  },
+  "scripts": {
+    "generate": "NODE_OPTIONS=--max-old-space-size=9000 || set NODE_OPTIONS=--max-old-space-size=9000 && nuxi generate",
+    "build": "NODE_OPTIONS=--max-old-space-size=6000 || set NODE_OPTIONS=--max-old-space-size=6000 && nuxi build",
+    "dev": "NODE_OPTIONS=--max-old-space-size=6000 || set NODE_OPTIONS=--max-old-space-size=6000 && nuxi dev",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint .",
+    "postinstall": "nuxi prepare",
+    "cleanup": "nuxi cleanup"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0",
+    "@nuxtjs/i18n": "8.0.0-beta.7"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "vite",
+        "vue",
+        "vue-router",
+        "webpack"
+      ]
+    }
+  }
+}
